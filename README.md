@@ -20,6 +20,11 @@ https://jhc.sjtu.edu.cn/~hongfeifu/manuscriptb.pdf
 
 # Quick start with ZKWASM command line
 
+## Clone and Build
+```
+cargo build
+```
+
 ## Setup input:
 wasm code
 
@@ -62,7 +67,7 @@ cargo run --release -- --function <FUNCTION_NAME> --wasm <WASM_BINARY> aggregate
 
 ## Generate verify contract:
 ```
-cargo run --release --function <FUNCTION_NAME> --wasm <WASM_BINARY> solidity-aggregate-verifier --proof <PROOF_PATH> --instances <AGGREGATE_INSTANCE_PATH>
+cargo run --release -- --function <FUNCTION_NAME> --wasm <WASM_BINARY> solidity-aggregate-verifier --proof <PROOF_PATH> --instances <AGGREGATE_INSTANCE_PATH>
 ```
 
 # Operations Spec [WIP]
